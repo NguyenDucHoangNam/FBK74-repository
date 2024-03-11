@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Danhsachtimsan_nhat</servlet-name>
+        <servlet-class>controller.Danhsachtimsan_nhat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Danhsachtimsan_nhat</servlet-name>
+        <url-pattern>/danhsachtimsan_nhat</url-pattern>
+    </servlet-mapping>
+
+
+    <!--nam-->
+<!--    <servlet>
+        <servlet-name>DetailTournamentServlet</servlet-name>
+        <servlet-class>controller.DetailTournamentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <servlet-class>controller.ScheduleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TeamServlet</servlet-name>
+        <servlet-class>controller.TeamServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>controller.ResultServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterTournamentOfYear</servlet-name>
+        <servlet-class>controller.RegisterTournamentOfYear</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TournamentDetail</servlet-name>
+        <servlet-class>controller.TournamentDetail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CancelRegisTournament</servlet-name>
+        <servlet-class>controller.CancelRegisTournament</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminCensorshipServlet</servlet-name>
+        <servlet-class>controller.AdminCensorshipServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminNamCensorShipServlet</servlet-name>
+        <servlet-class>controller.AdminNamCensorShipServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailTournamentServlet</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ScheduleServlet</servlet-name>
+        <url-pattern>/schedule</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeamServlet</servlet-name>
+        <url-pattern>/teams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterTournamentOfYear</servlet-name>
+        <url-pattern>/RegisterTournamentOfYear</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TournamentDetail</servlet-name>
+        <url-pattern>/TournamentDetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CancelRegisTournament</servlet-name>
+        <url-pattern>/CancelRegisTournament</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminCensorshipServlet</servlet-name>
+        <url-pattern>/AdminCensorshipServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminNamCensorShipServlet</servlet-name>
+        <url-pattern>/admin/frontend.nam/AdminNamCensorShipServlet</url-pattern>
+    </servlet-mapping>-->
+    <!--nam-->
+
+
+
+
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
