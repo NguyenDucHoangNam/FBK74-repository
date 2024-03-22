@@ -1,0 +1,238 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 5, 2024, 9:32:39 PM
+    Author     : nhatk
+*/
+.time-show{
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.imgne {
+    height: 400px;
+    width: 200px;
+    background-color: red;
+    flex: 1;
+    margin-right: 1rem;
+    /*    background-image: url("${football.footballField.image}"); */
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.infor {
+    background-color: #069379;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body {
+    display: flex;
+    background-color:#069379;
+}
+
+table.table-bordered th,
+table.table-bordered td {
+    border: 2px solid #000;
+    text-align: center;
+    /* Màu sắc đen và độ đậm 2px */
+}
+table.table-bordered th{
+    background-color: #81d3bb;
+}
+table.table-bordered td{
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+
+}
+.modal-header{
+    background-color:#02857a;
+    border-bottom: ridge !important;
+}
+
+.modal-header h5{
+    font-size:2rem;
+}
+
+/* Gradient Background cho body */
+body {
+
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* Card hiệu ứng shadow */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    background: linear-gradient(100deg, #afb7cd, #afcbdb);
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+/* Button hiệu ứng */
+.btn-primary {
+    background-color: #02857a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-primary:hover {
+    background-color: #026a68;
+}
+
+/* Hiệu ứng cho navbar */
+.navbar-nav .nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+/*.bookfootball{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img_nhat/anhdatsan.jpg);
+    opacity: 0.8;  filter: alpha(opacity=80);
+}*/
+
+.bookfootball {
+    position: relative;
+    overflow: hidden;
+}
+
+.bookfootball::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img_nhat/anhdatsan.jpg) center / cover no-repeat;
+    filter: blur(8px); /* Điều chỉnh độ mờ tùy ý */
+    z-index: -1;
+}
+
+.floating-button {
+
+    position: relative;
+    z-index: 1; /* Đặt z-index để nút button nổi lên trên background */
+    font-size: 20px;
+    top: 10vh;
+    padding: 5%;
+    font-weight: 600;
+}
+
+
+.labelform{
+    font-size:23px;
+    font-weight:700;
+    color:rgba(71, 44, 36, 0.772);
+
+}
+.col12{
+    text-align: center;
+}
+
+/*Style của sandasat.jsp*/
+
+.table tbody td.status span {
+    position: relative;
+    border-radius: 30px;
+    padding: 4px 10px 4px 25px;
+}
+
+.table tbody td.status span:after {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    border-radius: 50%;
+}
+.table tbody td.status .active {
+    background: #cff6dd;
+    color: #1fa750;
+}
+
+.table tbody td.status .active:after {
+    background: #23bd5a;
+}
+
+.table tbody td.status .deleted {
+    background:#F7C6C5;
+    color: #DC3545;
+}
+
+.table tbody td.status .deleted:after {
+    background: #DC3545;
+}
+
+.table tbody td.status .waiting {
+    background: #fdf5dd;
+    color: #cfa00c;
+}
+
+.table tbody td.status .waiting:after {
+    background: #f2be1d;
+}
+
+.table tbody td.status .finished {
+    background: #F5F5DD;
+    color: #8C6C43;
+}
+
+.table tbody td.status .finished:after {
+    background: #8C6C43;
+}
+
+.table tbody td .details {
+    display: none;
+}
+
+/* Responsive Table Classes */
+@media (max-width: 767.98px) {
+    .table-responsive-xl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #dee2e6;
+    }
+
+    .table-responsive-xl > .table {
+        margin-bottom: 0;
+    }
+
+    .table-responsive-xl > .table thead th {
+        white-space: nowrap;
+    }
+
+    .table-responsive-xl > .table tbody td {
+        white-space: nowrap;
+    }
+
+    .table-responsive-xl > .table tbody td.details {
+        display: table-cell;
+        white-space: normal;
+    }
+}
